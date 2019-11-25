@@ -1,0 +1,474 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sbol="http://sbols.org/v2#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/Terminator/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Terminator"/>
+    <sbol:displayId>Terminator</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>Terminator</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000141"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/TerminatorSequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/Assembly/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly"/>
+    <sbol:displayId>Assembly</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/RBS1_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/RBS1_Component"/>
+        <sbol:displayId>RBS1_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/RBS_2/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/Gen1_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Gen1_Component"/>
+        <sbol:displayId>Gen1_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/BFP/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/Pro_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Pro_Component"/>
+        <sbol:displayId>Pro_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/Promoter/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/Gen_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Gen_Component"/>
+        <sbol:displayId>Gen_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/GFP/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/RBS_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/RBS_Component"/>
+        <sbol:displayId>RBS_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/RBS_1/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/RBS2_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/RBS2_Component"/>
+        <sbol:displayId>RBS2_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/RBS_3/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/Gen2_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Gen2_Component"/>
+        <sbol:displayId>Gen2_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/RFP/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:component>
+      <sbol:Component rdf:about="https://github.com/Jbwdn/Assembly/Ter_Component/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Ter_Component"/>
+        <sbol:displayId>Ter_Component</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:access rdf:resource="http://sbols.org/v2#public"/>
+        <sbol:definition rdf:resource="https://github.com/Jbwdn/Terminator/1"/>
+      </sbol:Component>
+    </sbol:component>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation"/>
+        <sbol:displayId>Assembly_SequenceAnnotation</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation/Assembly_SequenceAnnotation_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation/Assembly_SequenceAnnotation_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>1</sbol:start>
+            <sbol:end>3</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/Pro_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation4/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation4"/>
+        <sbol:displayId>Assembly_SequenceAnnotation4</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation4/Assembly_SequenceAnnotation4_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation4/Assembly_SequenceAnnotation4_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation4_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>12</sbol:start>
+            <sbol:end>13</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/Gen1_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation2/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation2"/>
+        <sbol:displayId>Assembly_SequenceAnnotation2</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation2/Assembly_SequenceAnnotation2_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation2/Assembly_SequenceAnnotation2_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation2_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>7</sbol:start>
+            <sbol:end>9</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/Gen_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation3/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation3"/>
+        <sbol:displayId>Assembly_SequenceAnnotation3</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation3/Assembly_SequenceAnnotation3_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation3/Assembly_SequenceAnnotation3_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation3_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>10</sbol:start>
+            <sbol:end>11</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/RBS1_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation5/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation5"/>
+        <sbol:displayId>Assembly_SequenceAnnotation5</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation5/Assembly_SequenceAnnotation5_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation5/Assembly_SequenceAnnotation5_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation5_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>14</sbol:start>
+            <sbol:end>15</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/RBS2_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation1/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation1"/>
+        <sbol:displayId>Assembly_SequenceAnnotation1</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation1/Assembly_SequenceAnnotation1_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation1/Assembly_SequenceAnnotation1_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation1_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>4</sbol:start>
+            <sbol:end>6</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/RBS_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation6/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation6"/>
+        <sbol:displayId>Assembly_SequenceAnnotation6</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation6/Assembly_SequenceAnnotation6_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation6/Assembly_SequenceAnnotation6_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation6_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>16</sbol:start>
+            <sbol:end>17</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/Gen2_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceAnnotation>
+      <sbol:SequenceAnnotation rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation7/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation7"/>
+        <sbol:displayId>Assembly_SequenceAnnotation7</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:location>
+          <sbol:Range rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation7/Assembly_SequenceAnnotation7_Range/1">
+            <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceAnnotation7/Assembly_SequenceAnnotation7_Range"/>
+            <sbol:displayId>Assembly_SequenceAnnotation7_Range</sbol:displayId>
+            <sbol:version>1</sbol:version>
+            <sbol:start>18</sbol:start>
+            <sbol:end>19</sbol:end>
+            <sbol:orientation rdf:resource="http://sbols.org/v2#inline"/>
+          </sbol:Range>
+        </sbol:location>
+        <sbol:component rdf:resource="https://github.com/Jbwdn/Assembly/Ter_Component/1"/>
+      </sbol:SequenceAnnotation>
+    </sbol:sequenceAnnotation>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint4/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint4"/>
+        <sbol:displayId>Assembly_SequenceConstraint4</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/Gen1_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/RBS2_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint6/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint6"/>
+        <sbol:displayId>Assembly_SequenceConstraint6</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/Gen2_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/Ter_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint2/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint2"/>
+        <sbol:displayId>Assembly_SequenceConstraint2</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/Gen_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/RBS1_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint"/>
+        <sbol:displayId>Assembly_SequenceConstraint</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/Pro_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/RBS_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint3/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint3"/>
+        <sbol:displayId>Assembly_SequenceConstraint3</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/RBS1_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/Gen1_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint5/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint5"/>
+        <sbol:displayId>Assembly_SequenceConstraint5</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/RBS2_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/Gen2_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequenceConstraint>
+      <sbol:SequenceConstraint rdf:about="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint1/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly/Assembly_SequenceConstraint1"/>
+        <sbol:displayId>Assembly_SequenceConstraint1</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <sbol:restriction rdf:resource="http://sbols.org/v2#precedes"/>
+        <sbol:subject rdf:resource="https://github.com/Jbwdn/Assembly/RBS_Component/1"/>
+        <sbol:object rdf:resource="https://github.com/Jbwdn/Assembly/Gen_Component/1"/>
+      </sbol:SequenceConstraint>
+    </sbol:sequenceConstraint>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/AssemblySequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/RBS_1/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_1"/>
+    <sbol:displayId>RBS_1</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>RBS_1</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/RBS_1Sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/GFP/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/GFP"/>
+    <sbol:displayId>GFP</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>GFP</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/GFPSequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/BFP/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/BFP"/>
+    <sbol:displayId>BFP</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>BFP</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/BFPSequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/RFP/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RFP"/>
+    <sbol:displayId>RFP</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>RFP</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000804"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/RFPSequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/RBS_2/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_2"/>
+    <sbol:displayId>RBS_2</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>RBS_2</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/RBS_2Sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/RBS_3/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_3"/>
+    <sbol:displayId>RBS_3</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:title>RBS_3</dcterms:title>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000139"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/RBS_3Sequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:ComponentDefinition rdf:about="https://github.com/Jbwdn/Promoter/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Promoter"/>
+    <sbol:displayId>Promoter</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <dcterms:description></dcterms:description>
+    <sbol:type rdf:resource="http://www.biopax.org/release/biopax-level3.owl#DnaRegion"/>
+    <sbol:role rdf:resource="http://identifiers.org/so/SO:0000167"/>
+    <sbol:sequence rdf:resource="https://github.com/Jbwdn/PromoterSequence/1"/>
+  </sbol:ComponentDefinition>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/BFPSequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/BFPSequence"/>
+    <sbol:displayId>BFPSequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/AssemblySequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/AssemblySequence"/>
+    <sbol:displayId>AssemblySequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AAAAAAAAAAAAAAAAAAA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/RBS_2Sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_2Sequence"/>
+    <sbol:displayId>RBS_2Sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/GFPSequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/GFPSequence"/>
+    <sbol:displayId>GFPSequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AAA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/RBS_1Sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_1Sequence"/>
+    <sbol:displayId>RBS_1Sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AAA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/PromoterSequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/PromoterSequence"/>
+    <sbol:displayId>PromoterSequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AAA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/RBS_3Sequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RBS_3Sequence"/>
+    <sbol:displayId>RBS_3Sequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/TerminatorSequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/TerminatorSequence"/>
+    <sbol:displayId>TerminatorSequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <sbol:Sequence rdf:about="https://github.com/Jbwdn/RFPSequence/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/RFPSequence"/>
+    <sbol:displayId>RFPSequence</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <prov:wasGeneratedBy rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1"/>
+    <sbol:elements>AA</sbol:elements>
+    <sbol:encoding rdf:resource="http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html"/>
+  </sbol:Sequence>
+  <prov:Activity rdf:about="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/1">
+    <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity"/>
+    <sbol:displayId>Assembly_SBOLDesignerActivity</sbol:displayId>
+    <sbol:version>1</sbol:version>
+    <dc:creator></dc:creator>
+    <prov:endedAtTime>2019-11-25T11:24:38.901Z</prov:endedAtTime>
+    <prov:qualifiedAssociation>
+      <prov:Association rdf:about="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/Association/1">
+        <sbol:persistentIdentity rdf:resource="https://github.com/Jbwdn/Assembly_SBOLDesignerActivity/Association"/>
+        <sbol:displayId>Association</sbol:displayId>
+        <sbol:version>1</sbol:version>
+        <prov:hadRole rdf:resource="http://sbols.org/v2#sequenceEditor"/>
+        <prov:agent rdf:resource="https://synbiohub.org/public/SBOL_Software/SBOLDesigner/3.0"/>
+      </prov:Association>
+    </prov:qualifiedAssociation>
+  </prov:Activity>
+</rdf:RDF>
