@@ -1,7 +1,7 @@
 from opentrons import labware, instruments, modules, robot
 
 
-sample_number=5
+sample_number=17
 ethanol_well='A11'
 
 
