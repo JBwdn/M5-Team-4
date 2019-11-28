@@ -1,0 +1,33 @@
+Loading json containers...
+Json container file load complete, listing database
+Found 0 containers to add. Starting migration...
+Database migration complete!
+/Users/Jake/.opentrons/deck_calibration.json not found. Loading defaults
+/Users/Jake/.opentrons/robot_settings.json not found. Loading defaults
+([20.0, 1.5, 6.666666666666667, 0.75], [80.0, 98.5, 93.33333333333333, 99.25])
+Picking up tip well A1 in "1"
+Aspirating 80.0 uL from well A2 in "2" at 1.0 speed
+Dispensing 80.0 uL into well B1 in "2"
+Aspirating 98.5 uL from well A2 in "2" at 1.0 speed
+Dispensing 98.5 uL into well C1 in "2"
+Aspirating 93.33333333333333 uL from well A2 in "2" at 1.0 speed
+Dispensing 93.33333333333333 uL into well D1 in "2"
+Aspirating 99.25 uL from well A2 in "2" at 1.0 speed
+Dispensing 99.25 uL into well E1 in "2"
+Dropping tip well A1 in "11"
+Picking up tip well B1 in "1"
+Aspirating 20.0 uL from well A1 in "2" at 1.0 speed
+Dispensing 20.0 uL into well B1 in "2"
+Dropping tip well A1 in "11"
+Picking up tip well C1 in "1"
+Aspirating 1.5 uL from well B1 in "2" at 1.0 speed
+Dispensing 1.5 uL into well C1 in "2"
+Dropping tip well A1 in "11"
+Picking up tip well D1 in "1"
+Aspirating 6.666666666666667 uL from well C1 in "2" at 1.0 speed
+Dispensing 6.666666666666667 uL into well D1 in "2"
+Dropping tip well A1 in "11"
+Picking up tip well E1 in "1"
+Aspirating 0.75 uL from well D1 in "2" at 1.0 speed
+Dispensing 0.75 uL into well E1 in "2"
+Dropping tip well A1 in "11"
