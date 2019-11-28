@@ -2,7 +2,7 @@ from opentrons import labware, instruments, modules, robot
 import numpy as np
 
 
-final_assembly_dict={"A1": ["A7", "B7", "C7", "D7", "E7"]}
+final_assembly_dict={"A1": ["A7", "B7", "C7", "D7", "E7"], "B1": ["A7", "B7", "C7", "F7", "E7"], "C1": ["A7", "B7", "C7", "G7", "H7"], "D1": ["A7", "B7", "C7", "G7", "A8"], "E1": ["A7", "B7", "B8", "F7", "H7"], "F1": ["A7", "B7", "B8", "F7", "A8"], "G1": ["A7", "B7", "B8", "G7", "E7"], "H1": ["A7", "C8", "D8", "E8", "F8"]}
 tiprack_num=1
 
 

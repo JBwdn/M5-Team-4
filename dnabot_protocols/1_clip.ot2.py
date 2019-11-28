@@ -1,7 +1,7 @@
 from opentrons import labware, instruments, modules, robot
 
 
-clips_dict={"prefixes_wells": ["A8", "A7", "C4", "C7", "C11"], "prefixes_plates": ["5", "5", "5", "5", "5"], "suffixes_wells": ["B7", "C1", "C2", "C3", "B8"], "suffixes_plates": ["5", "5", "5", "5", "5"], "parts_wells": ["E2", "F2", "C2", "B2", "D2"], "parts_plates": ["8", "8", "8", "8", "8"], "parts_vols": [1, 1, 1, 1, 1], "water_vols": [7.0, 7.0, 7.0, 7.0, 7.0]}
+clips_dict={"prefixes_wells": ["A8", "A7", "C6", "C7", "C11", "C9", "C8", "C10", "C12", "C5", "A7", "A1", "A2", "A3"], "prefixes_plates": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"], "suffixes_wells": ["B7", "C1", "C2", "C3", "B8", "C3", "C3", "B8", "B8", "C2", "B1", "B2", "B3", "B8"], "suffixes_plates": ["2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2", "2"], "parts_wells": ["E1", "F2", "C2", "B2", "D2", "B2", "B2", "D2", "D2", "C2", "F2", "C2", "B2", "D2"], "parts_plates": ["5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5", "5"], "parts_vols": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "water_vols": [7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0]}
 
 
 def clip(
