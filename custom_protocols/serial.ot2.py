@@ -2,12 +2,12 @@
 from opentrons import instruments, labware, robot
 
 # Parameters:
-stock_conc_uM = 50
+stock_conc_uM = 200
 stock_posn = 'A1'
 dilutant_posn = 'A2'
-serial_concs_uM = [10, 0.3, 0.1, 0.05]
-serial_posn = ['B1', 'C1', 'D1', 'E1']
-final_vol_uL = 100
+serial_concs_uM = [150, 50, 10, 0.5, 0.1]
+serial_posn = ['B1', 'C1', 'D1', 'E1', 'F1']
+final_vol_uL = 200
 
 
 def setup():
@@ -16,7 +16,7 @@ def setup():
     PLATE = labware.load('96-flat', '2')
     TRASH = labware.load('trash-box', '11')
     TIP_RACK = labware.load('opentrons_96_tiprack_300ul', '1')
-    P300_PIPETTE = instruments.P300_Single(mount='left', 
+    P300_PIPETTE = instruments.P300_Single(mount='left',
                                            tip_racks=[TIP_RACK],
                                            trash_container=TRASH)
 
