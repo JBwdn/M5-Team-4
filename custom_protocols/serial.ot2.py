@@ -50,7 +50,7 @@ def serialbot(serial_vols, dilutant_vols):
     PIPETTE.pick_up_tip()
     PIPETTE.aspirate(serial_vols[0], PLATE.wells(stock_posn))
     PIPETTE.dispense(serial_vols[0], PLATE.wells(serial_posn[0]))
-    PIPETTE.mix(5 , final_vol_uL, PLATE.wells(serial_posn[0]))
+    # PIPETTE.mix(5 , final_vol_uL, PLATE.wells(serial_posn[0]))
     PIPETTE.drop_tip()
 
     # Dilution loop:
@@ -58,7 +58,7 @@ def serialbot(serial_vols, dilutant_vols):
         PIPETTE.pick_up_tip()
         PIPETTE.aspirate(serial_vols[i], PLATE.wells(serial_posn[i-1]))
         PIPETTE.dispense(serial_vols[i], PLATE.wells(serial_posn[i]))
-        PIPETTE.mix(5 , final_vol_uL, PLATE.wells())
+        # PIPETTE.mix(5 , final_vol_uL, PLATE.wells())
         PIPETTE.drop_tip()
 
 
