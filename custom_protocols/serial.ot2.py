@@ -39,20 +39,18 @@ def serialbot(serial_vols, dilutant_vols):
     PIPETTE.pick_up_tip()
     PIPETTE.aspirate(serial_vols[0], PLATE.wells(stock_posn))
     PIPETTE.dispense(serial_vols[0], PLATE.wells(serial_posn[0]))
-    PIPETTE.mix(5 , final_vol_uL, PLATE.wells(serial_posn[0]))
+    PIPETTE.mix(5, final_vol_uL, PLATE.wells(serial_posn[0]))
     PIPETTE.drop_tip()
 
     # Dilution loop:
     for i in range(1, len(serial_vols)):
-        PIPETTE.pick_up_tip()
         PIPETTE.aspirate(serial_vols[i], PLATE.wells(serial_posn[i-1]))
         PIPETTE.dispense(serial_vols[i], PLATE.wells(serial_posn[i]))
-        PIPETTE.mix(5 , final_vol_uL, PLATE.wells())
-        PIPETTE.drop_tip()
-
+        PIPETTE.mix(5, final_vol_uL*0.8, PLATE.wells(serial_posn[i]))
+    PIPETTE.drop_tip()
 
 PLATE = labware.load('96-flat', '1')
-TRASH = labware.load('trash-box', '11')
+TRASH = labware.load('trash-box', '12')
 TIP_RACK = labware.load('opentrons_96_tiprack_300ul', '3')
 PIPETTE = instruments.P300_Single(mount='right', tip_racks=[TIP_RACK], trash_container=TRASH)
 
