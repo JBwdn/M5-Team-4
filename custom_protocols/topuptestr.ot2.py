@@ -4,8 +4,8 @@ from opentrons import instruments, labware, robot
 # Parameters:
 mode = 'P10'
 mount = 'right'
-N = 19
-end_gap = 9
+N = 24
+end_gap = 0
 location = '3'
 
 
