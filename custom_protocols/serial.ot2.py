@@ -39,7 +39,7 @@ def serialbot(serial_vols, dilutant_vols):
     PIPETTE.pick_up_tip()
     PIPETTE.aspirate(serial_vols[0], PLATE.wells(stock_posn))
     PIPETTE.dispense(serial_vols[0], PLATE.wells(serial_posn[0]))
-    # PIPETTE.mix(5 , final_vol_uL, PLATE.wells(serial_posn[0]))
+    PIPETTE.mix(5 , final_vol_uL, PLATE.wells(serial_posn[0]))
     PIPETTE.drop_tip()
 
     # Dilution loop:
@@ -47,20 +47,18 @@ def serialbot(serial_vols, dilutant_vols):
         PIPETTE.pick_up_tip()
         PIPETTE.aspirate(serial_vols[i], PLATE.wells(serial_posn[i-1]))
         PIPETTE.dispense(serial_vols[i], PLATE.wells(serial_posn[i]))
-        # PIPETTE.mix(5 , final_vol_uL, PLATE.wells())
+        PIPETTE.mix(5 , final_vol_uL, PLATE.wells())
         PIPETTE.drop_tip()
 
 
-if __name__ == "__main__":
-    PLATE = labware.load('96-flat', '1')
-    TRASH = labware.load('trash-box', '11')
-    TIP_RACK = labware.load('opentrons_96_tiprack_300ul', '3')
-    PIPETTE = instruments.P300_Single(mount='left',
-                                           tip_racks=[TIP_RACK],
-                                           trash_container=TRASH)
+PLATE = labware.load('96-flat', '1')
+TRASH = labware.load('trash-box', '11')
+TIP_RACK = labware.load('opentrons_96_tiprack_300ul', '3')
+PIPETTE = instruments.P300_Single(mount='left',
+                                        tip_racks=[TIP_RACK],
+                                        trash_container=TRASH)
 
-    serial_vols, dilutant_vols = serial(stock_conc_uM, serial_concs_uM, final_vol_uL)
-    serialbot(serial_vols, dilutant_vols)
-    print(serial(stock_conc_uM, serial_concs_uM, final_vol_uL))
-    for c in robot.commands():
-        print(c)
+serial_vols, dilutant_vols = serial(stock_conc_uM, serial_concs_uM, final_vol_uL)
+serialbot(serial_vols, dilutant_vols)
+for c in robot.commands():
+    print(c)
