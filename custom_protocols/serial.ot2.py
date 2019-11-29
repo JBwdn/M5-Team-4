@@ -54,7 +54,7 @@ def serialbot(serial_vols, dilutant_vols):
 PLATE = labware.load('96-flat', '1')
 TRASH = labware.load('trash-box', '11')
 TIP_RACK = labware.load('opentrons_96_tiprack_300ul', '3')
-PIPETTE = instruments.P300_Single(mount='left', tip_racks=[TIP_RACK], trash_container=TRASH)
+PIPETTE = instruments.P300_Single(mount='right', tip_racks=[TIP_RACK], trash_container=TRASH)
 
 serial_vols, dilutant_vols = serial(stock_conc_uM, serial_concs_uM, final_vol_uL)
 serialbot(serial_vols, dilutant_vols)
