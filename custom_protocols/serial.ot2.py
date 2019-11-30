@@ -59,3 +59,6 @@ print(serial_vols, dilutant_vols)
 serialbot(serial_vols, dilutant_vols)
 for c in robot.commands():
     print(c)
+
+if __name__ == "__main__":
+    pass
