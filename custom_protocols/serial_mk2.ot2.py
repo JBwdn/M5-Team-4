@@ -16,7 +16,8 @@ serial_dict = {
                 'V' : 100},
     'Solvent' : {'L' : 'A2'},
     'First_tip' : {'L' : 'A1'},
-    'Pipette' : {'Mode' : 'P300', 'Mount' : 'left'}}
+    'Pipette' : {'Mode' : 'P300', 'Mount' : 'left', 'Rack' : '3'}
+    }
 
 
 def serial_calculator(stock_c, serial_c_list, final_v):
@@ -30,7 +31,7 @@ def serial_calculator(stock_c, serial_c_list, final_v):
 
 
 def serial_bot(serial_dict):
-    '''Execute the serial dilution laid out in the input dictionay on Opentrons OT-2.'''
+    '''Execute the serial dilution laid out in the input dictionary on Opentrons OT-2.'''
     # Constants:
     tip_location = serial_dict['First_tip']['L']
     solvent_location = serial_dict['Solvent']['L']
@@ -62,7 +63,7 @@ def serial_bot(serial_dict):
 
 
 if __name__ == "__main__":
-    # Metainformation:
+    # Print parameters:
     for key, subdict in serial_dict.items():
         print('\nItem:', key)
         for key in subdict:
@@ -71,10 +72,10 @@ if __name__ == "__main__":
     # Labware setup:
     plate = labware.load('96-flat', '1')
     if serial_dict['Pipette']['Mode'] == 'P300':
-        tip_rack = labware.load('opentrons_96_tiprack_300ul', '3')
+        tip_rack = labware.load('opentrons_96_tiprack_300ul', serial_dict['Pipette']['Rack'])
         pipette = instruments.P300_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
     elif serial_dict['Pipette']['Mode'] == 'P10':
-        tip_rack = labware.load('opentrons_96_tiprack_10ul', '3')
+        tip_rack = labware.load('opentrons_96_tiprack_10ul', serial_dict['Pipette']['Rack'])
         pipette = instruments.P10_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
 
     # Main:
