@@ -3,21 +3,20 @@ from opentrons import instruments, labware, robot
 
 metadata = {
     'protocolName': 'Customisable Serial Dilution',
-    'author': 'Jake Bowden - SSB MRes Team 4 - Imperial Student Biofoundry',
+    'author': 'Jake Bowden - Imperial Student Biofoundry',
     'source': 'github.com/JBwdn/M5-Team-4'
     }
 
 
 # Parameters: 
-serial_dict = {'Stock' : {'C' : 700, 
-                          'L' : 'A1'},
-               'Serial' : {'C' : [500, 300, 150, 75, 25, 5, 0.5],
-                           'L' : ['B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'H1'],
-                           'V' : 100},
-               'Solvent' : {'L' : 'A2'},
-               'First_tip' : {'L' : 'A1'},
-               'Pipette' : {'Mode' : 'P300',
-                            'Mount' : 'left'}}
+serial_dict = {
+    'Stock' : {'C' : 700, 'L' : 'A1'},
+    'Serial' : {'C' : [500, 300, 150, 75, 25, 5, 0.5],
+                'L' : ['B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'H1'],
+                'V' : 100},
+    'Solvent' : {'L' : 'A2'},
+    'First_tip' : {'L' : 'A1'},
+    'Pipette' : {'Mode' : 'P300', 'Mount' : 'left'}}
 
 
 def serial_calculator(stock_c, serial_c_list, final_v):
