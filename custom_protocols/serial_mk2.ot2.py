@@ -1,6 +1,12 @@
 # Imports:
 from opentrons import instruments, labware, robot
 
+metadata = {
+    'protocolName': 'Customisable Serial Dilution',
+    'author': 'Jake Bowden - SSB MRes Team 4 - Imperial Student Biofoundry',
+    'source': 'github.com/JBwdn/M5-Team-4'
+    }
+
 
 # Parameters: 
 serial_dict = {'Stock' : {'C' : 700, 
@@ -15,7 +21,7 @@ serial_dict = {'Stock' : {'C' : 700,
 
 
 def serial_calculator(stock_c, serial_c_list, final_v):
-    '''Calculate the volumes needed for a serial dilution'''
+    '''Calculate the volumes needed for a serial dilution with predefined target concentrations.'''
     V1 = serial_c_list[0] * final_v / stock_c
     serial_vols = [V1]
     for i in range(1, len(serial_c_list)):
@@ -25,6 +31,7 @@ def serial_calculator(stock_c, serial_c_list, final_v):
 
 
 def serial_bot(serial_dict):
+    '''Execute the serial dilution laid out in the input dictionay on Opentrons OT-2.'''
     # Constants:
     tip_location = serial_dict['First_tip']['L']
     solvent_location = serial_dict['Solvent']['L']
@@ -32,7 +39,6 @@ def serial_bot(serial_dict):
     stock_location = serial_dict['Stock']['L']
     serial_volumes = serial_dict['Serial']['Volumes']
     VT = serial_dict['Serial']['V']
-
     # Pipette solvent:
     pipette.start_at_tip(tip_rack.well(tip_location))
     pipette.pick_up_tip()
