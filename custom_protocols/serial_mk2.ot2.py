@@ -1,6 +1,7 @@
 # Imports:
 from opentrons import instruments, labware, robot
 
+
 metadata = {
     'protocolName': 'Customisable Serial Dilution',
     'author': 'Jake Bowden - Imperial Student Biofoundry',
@@ -10,13 +11,13 @@ metadata = {
 
 # Parameters: 
 serial_dict = {
-    'Stock' : {'C' : 700, 'L' : 'A1'},
-    'Serial' : {'C' : [500, 300, 150, 75, 25, 5, 0.5],
-                'L' : ['B1', 'C1', 'D1', 'E1', 'F1', 'G1', 'H1'],
+    'Stock' : {'C' : 1000, 'L' : 'A1'},
+    'Serial' : {'C' : C,
+                'L' : L,
                 'V' : 100},
     'Solvent' : {'L' : 'A2'},
     'First_tip' : {'L' : 'A1'},
-    'Pipette' : {'Mode' : 'P300', 'Mount' : 'left', 'Rack' : '3'}
+    'Pipette' : {'Mode' : 'P300', 'Mount' : 'right', 'Rack' : '3'}
     }
 
 
@@ -44,7 +45,7 @@ def serial_bot(serial_dict):
     pipette.pick_up_tip()
     pipette.transfer(
             [VT - vol for vol in serial_volumes],
-            plate.wells(solvent_location),
+            tube_rack.wells(solvent_location),
             plate.wells(serial_locations),
             new_tip='never',
             blow_out=True)
@@ -57,9 +58,28 @@ def serial_bot(serial_dict):
             plate.wells(serial_locations),
             air_gap=20,
             new_tip='never',
-            blow_out=True,
-            mix_after=(5, 0.4*VT))
+            blow_out=False,
+            mix_after=(5, 0.3*VT))
     pipette.drop_tip()
+
+
+# Labware setup:
+plate = labware.load('4ti-0960_FrameStar', '1')
+tube_rack = labware.load('tube-rack_E1415-1500', '4')
+if serial_dict['Pipette']['Mode'] == 'P300':
+    tip_rack = labware.load('opentrons_96_tiprack_300ul', serial_dict['Pipette']['Rack'])
+    pipette = instruments.P300_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
+elif serial_dict['Pipette']['Mode'] == 'P10':
+    tip_rack = labware.load('opentrons_96_tiprack_10ul', serial_dict['Pipette']['Rack'])
+    pipette = instruments.P10_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
+
+
+# Main:
+stock_conc = serial_dict['Stock']['C']
+serial_concs = serial_dict['Serial']['C']
+serial_vol = serial_dict['Serial']['V']
+serial_dict['Serial']['Volumes'] = serial_calculator(stock_conc, serial_concs, serial_vol)
+serial_bot(serial_dict)
 
 
 if __name__ == "__main__":
@@ -68,25 +88,7 @@ if __name__ == "__main__":
         print('\nItem:', key)
         for key in subdict:
             print(key + ':', subdict[key])
-
-    # Labware setup:
-    plate = labware.load('96-flat', '1')
-    if serial_dict['Pipette']['Mode'] == 'P300':
-        tip_rack = labware.load('opentrons_96_tiprack_300ul', serial_dict['Pipette']['Rack'])
-        pipette = instruments.P300_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
-    elif serial_dict['Pipette']['Mode'] == 'P10':
-        tip_rack = labware.load('opentrons_96_tiprack_10ul', serial_dict['Pipette']['Rack'])
-        pipette = instruments.P10_Single(mount=serial_dict['Pipette']['Mount'], tip_racks=[tip_rack])
-
-    # Main:
-    stock_conc = serial_dict['Stock']['C']
-    serial_concs = serial_dict['Serial']['C']
-    serial_vol = serial_dict['Serial']['V']
-
-    serial_dict['Serial']['Volumes'] = serial_calculator(stock_conc, serial_concs, serial_vol)
-    serial_bot(serial_dict)
-
-    # Commands:
+    # Print commands: 
     print('\n')
     for c in robot.commands():
         print(c)

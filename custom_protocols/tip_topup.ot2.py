@@ -1,10 +1,11 @@
 # Imports:
 from opentrons import instruments, labware, robot
 
+
 # Parameters:
 mode = 'P10'
 mount = 'right'
-N = 24
+N = 41
 end_gap = 0
 location = '3'
 
@@ -26,7 +27,3 @@ elif mode == 'P10':
 for i in range(N):
     PIPETTE.pick_up_tip(TIP_RACK.wells(all_wells[- (i + end_gap + 1)]))
     PIPETTE.drop_tip(TIP_RACK.wells(all_wells[i]))
-
-
-for c in robot.commands():
-    print(c)
