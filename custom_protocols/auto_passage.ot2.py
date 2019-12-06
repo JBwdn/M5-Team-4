@@ -14,7 +14,8 @@ sample_ODs = [0.3]
 sample_wells = ["A1"]
 sample_destinations = ["A2"]
 LB_well = "A1"
-passage_vol = 50
+target_vol = 50
+target_OD = 0.2
 P300_tip_column = 0
 P10_first_tip = "A1"
 
@@ -30,7 +31,9 @@ master_settings = {
 # Labware:
 tempdeck = modules.load("tempdeck", master_settings['Temp_module']["Position"])
 hotplate = labware.load(
-    "opentrons_24_aluminumblock_generic_2ml_screwcap", master_settings['Temp_module']["Position"], share=True
+    "opentrons_24_aluminumblock_generic_2ml_screwcap", 
+    master_settings['Temp_module']["Position"], 
+    share=True
 )
 sample_plate = labware.load(
     "4ti-0960_FrameStar", 
@@ -59,19 +62,17 @@ P300.start_at_tip(p300_tip_rack.cols(P300_tip_column))
 
 
 # Main:
-LB_vols = [passage_vol * OD for OD in sample_ODs]
+LB_vols = [target_vol * OD / target_OD for OD in sample_ODs]
 tempdeck.set_temperature(37)
 tempdeck.wait_for_temp()
 robot.comment(
-    "Insert sample plate into position:" + master_settings["Plate"]["Position"]
+    "Insert sample plate into position: " + master_settings["Plate"]["Position"]
 )
 robot.pause()
-
 # Resuspend cells:
 P300.pick_up_tip()
 P300.mix(10, 100, sample_plate.cols(0).bottom(1))
 P300.return_tip()
-
 # Pipette LB and passage:
 for i in range(len(sample_ODs)):
     P10.pick_up_tip()
@@ -83,7 +84,7 @@ for i in range(len(sample_ODs)):
         new_tip="never",
     )
     P10.transfer(
-        passage_vol - LB_vols[i],
+        target_vol - LB_vols[i],
         sample_plate(sample_wells[i]),
         sample_plate(sample_destinations[i]),
         air_gap=2,
@@ -91,7 +92,6 @@ for i in range(len(sample_ODs)):
     )
     P10.mix(10, 10, sample_plate.well(sample_destinations[i]).bottom(1))
     P10.drop_tip()
-
 # Dispose of previous sample:
 P300.pick_up_tip()
 P300.aspirate(280, sample_plate.cols(0).bottom(1))
