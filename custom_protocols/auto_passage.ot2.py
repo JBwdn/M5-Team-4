@@ -76,7 +76,7 @@ P300.return_tip()
 # Pipette LB and passage:
 for i in range(len(sample_ODs)):
     P10.pick_up_tip()
-    P10.mix(3, 10, hotplate.well(LB_well))  # Wet tip...
+    P10.mix(3, 10, hotplate.well(LB_well)) # Wet tip...
     P10.transfer(
         LB_vols[i],
         hotplate.well(LB_well),
